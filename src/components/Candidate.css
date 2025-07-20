@@ -1,0 +1,90 @@
+body{
+    height: 900px;
+    margin: 0;
+    padding: 0;
+    display: flex;              /* Enable Flexbox */
+    align-items: flex-start;       /* Align towards top */
+    justify-content: center;
+    
+}
+
+.auth-container {
+    
+    box-sizing: border-box;
+    overflow-y: auto; 
+    align-items: center;
+    width: 600px;
+    max-height: 90vh;
+    overflow-y: auto;
+    padding: 20px;
+    background: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    margin-top: 40px;
+  }
+  
+  .auth {
+    width: 600px;
+    height: 100%;
+    margin: 100px 20px;
+    padding: 20px;
+    background: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0px 0px 12px rgba(0,0,0,0.1);
+  }
+
+  .auth-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #3591f3;
+  }
+  
+  .auth-container form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .auth-container label {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  .auth-container input,
+  .auth-container select {
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .auth-container button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #3591f3;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .password-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .password-container input {
+    flex: 1;
+    padding-right: 30px; /* Space for eye icon */
+  }
+  
+  .password-toggle-icon {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    color: #666;
+  }
+  

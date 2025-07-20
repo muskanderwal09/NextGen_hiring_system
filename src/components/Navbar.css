@@ -1,0 +1,45 @@
+/* Navbar.css */
+.navbar {
+    position: fixed;  /* Fix the navbar to the viewport */
+    top: 0;
+    left: 0;
+    width: 100vw; 
+    background-color:  #3591f3;
+    color: rgb(24, 21, 21);
+    font-size: 24px;
+    text-align: center;
+    z-index: 1000; /* Ensure it's above other content */
+  }
+  .logo {
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: #0b0379;
+    padding-right: 48%;
+  }
+  
+  .nav-links {
+    list-style: none;
+    padding: 0;
+    margin-left: 650px;
+    align-items: center;
+
+  }
+  
+  .nav-links li {
+    margin: 50px 0; /* Space between links */
+    padding-left: 30px;
+
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: rgb(2, 2, 177);
+    font-weight: bold;
+    font-size: 20px;
+    transition:  0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: #55534c; /* Highlight on hover */
+  }
+  
