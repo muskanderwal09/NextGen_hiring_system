@@ -1,0 +1,70 @@
+/* src/components/Candidate/CNavbar.css */
+
+.cnavbar {
+    width: 100vw;                      /* span full viewport width */
+    box-sizing: border-box;            /* include padding in width */
+    background-color: #3591f3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;    /* logo on one side, links on the other */
+    padding: 0 2rem;
+    flex-wrap: nowrap;                 /* prevent wrapping of flex items */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .cnavbar .logo {
+    color: #0f0597;
+    font-size: 1.7rem;
+    font-weight: bold;
+    white-space: nowrap;               /* never break the logo text */
+  }
+  
+  .cnavbar ul {
+    display: flex;
+    flex: 1;                           /* take all remaining space */
+    justify-content: space-evenly;     /* evenly distribute links */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;               /* prevent links from wrapping */
+  }
+  
+  .cnavbar ul li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .cnavbar ul li a {
+    color: rgb(2, 2, 177);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    transition: 0.3s ease;
+    white-space: nowrap;               /* never break link text */
+  }
+  
+  .cnavbar ul li a:hover {
+    color: #4d5d7e;
+  }
+  
+  /* Optional: stack vertically on very narrow screens */
+  @media (max-width: 600px) {
+    .cnavbar {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 1rem;
+    }
+    .cnavbar ul {
+      flex-direction: column;
+      width: 100%;
+    }
+    .cnavbar ul li a {
+      width: 100%;
+      text-align: left;
+    }
+  }
+  

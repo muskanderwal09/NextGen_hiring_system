@@ -1,0 +1,114 @@
+.JAM-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000 !important;
+}
+
+.JAM-modal-container {
+  position: relative;
+  background: #fff;
+  width: 400px;
+  max-height: 85vh;
+  overflow-y: auto;
+  padding: 20px 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+}
+
+.JAM-close-button {
+  position: absolute;
+  top: 10px;
+  right: 150px;
+  background: none;
+  border: none;
+  font-size: 22px;
+  line-height: 1;
+  cursor: pointer;
+  color: #333;
+}
+
+.JAM-close-button:hover {
+  background: none;
+}
+
+.JAM-modal-heading {
+  text-align: center;
+  margin: 0 0 18px;
+  font-size: 25px;
+  color: blue;
+}
+
+.JAM-modal-container label {
+  display: block;
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 4px;
+  color: #1207b3;
+}
+
+.JAM-modal-container input,
+.JAM-modal-container textarea {
+  width: 100%;
+  margin-bottom: 12px;
+  padding: 8px 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.JAM-modal-container textarea {
+  height: 90px;
+  resize: vertical;
+}
+
+.JAM-modal-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.JAM-modal-buttons button {
+  flex: 1;
+  padding: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.JAM-modal-buttons button[type="button"] {
+  background-color: #f39c12;
+  color: #fff;
+}
+
+.JAM-modal-buttons button[type="submit"] {
+  background-color: #27ae60;
+  color: #fff;
+}
+
+.JAM-modal-buttons button:hover {
+  opacity: 0.9;
+}
+
+.JAM-label-value {
+  margin-bottom: 10px;
+}
+
+.JAM-label-value label {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 2px;
+  display: block;
+}
+
+.JAM-label-value strong {
+  font-weight: 500;
+  color: #555;
+}

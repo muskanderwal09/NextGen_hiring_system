@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.candidate-front {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.hero1 {
+  background: url('/images/blackBG.jpeg') no-repeat center center/cover;
+  padding: 100px 20px;
+  text-align: center;
+  color: #f1f4f8;
+}
+
+.hero1 h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.hero1 p {
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.cta-btn {
+  padding: 15px 30px;
+  background-color: #0037ff;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.cta-btn:hover {
+  background-color: #4b39c6;
+}
+
+.about {
+  background-color: #fff;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.feature {
+  display: inline-block;
+  width: 30%;
+  padding: 20px;
+  text-align: center;
+  margin: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.feature img {
+  width: 100%;
+  border-radius: 8px;
+  height: 300px;
+}
+
+.feature:hover {
+  border-radius: 8px;
+ background-color: #d1f0f3;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+}
