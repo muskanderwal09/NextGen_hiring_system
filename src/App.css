@@ -1,0 +1,309 @@
+/* General Page Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #c7e2e9, #a4c5ed);
+  height: 100vh;
+  margin: 0;
+}
+
+/* Form Container */
+.container {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Inputs */
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Submit Button */
+button {
+  width: 100%;
+  padding: 12px;
+  background: #c7dbf4;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background: #bedbf8;
+}
+
+/* Success/Error Message */
+.message {
+  margin-top: 15px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .container {
+      width: 90%;
+  }
+}
+
+/* Front css*/
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1px 30px;
+  background: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.nav-links li a:hover {
+  color: #007bff;
+}
+
+.demo-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+/*Front.css code*/
+
+.front {
+  background: linear-gradient(135deg, #c7e2e9, #a4c5ed);
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+  margin-top: 20px;
+  height: 100%;
+}
+
+.hero-text {
+  max-width: 500px;
+  padding-right: 30px;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.hero-text span {
+  color: #007bff;
+}
+
+.free-demo {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.hero-image {
+  position: relative;
+}
+
+.image {
+  padding-top: 50px;
+  width: 1000px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.floating-message,
+.engagement,
+.candidates {
+  position: absolute;
+  background: white;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-size: 0.9rem;
+  margin: 90px;
+}
+
+.floating-message {
+  top: 10px;
+  left: 20px;
+}
+
+.engagement {
+  bottom: 20px;
+  right: 20px;
+}
+
+.candidates {
+  bottom: 80px;
+  left: 20px;
+}
+.card {
+  background-color: #e7e4f1;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #4a4a4a;
+  text-align: center;
+  opacity: 1; /* Initially visible */
+  transition: opacity 0.3s ease;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Lift the card slightly on hover */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Make the shadow stronger */
+  color:rgb(93, 77, 162) ;
+  background-color: rgb(221, 227, 253);
+  opacity: 0;
+  opacity: 1;
+}
+
+.info{
+  text-align: center; 
+}
+
+.ans{
+  text-align: center;
+  padding: 0 170px;
+  color: rgb(36, 37, 39);
+  padding-bottom: 150px;
+  font-size: 1.2rem;
+}
+b{
+  color: #0b427c;
+  font-size: 1.3rem;
+}
+.que {
+  font-family:  "Plus Jakarta Sans";
+  font-weight: 700;
+  font-size: 3rem;
+  letter-spacing: 3px;
+  background: linear-gradient(90deg, #5c3c8b, #9b47a2); /* New Gradient: purple to magenta */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: typingGlow 1.5s infinite alternate;
+  text-transform: uppercase;
+  min-height: 80px; /* Fix layout during typing */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+@keyframes typingGlow {
+  from {
+    text-shadow: 0 0 10px #a685d0, 0 0 20px #d29af1; /* Soft purple to pink glow */
+  }
+  to {
+    text-shadow: 0 0 20px #ae6fd8, 0 0 30px #d79bbf; /* Brighter pink to lavender glow */
+  }
+}
+
+
+
+/* Login */
+
+/* Ensure the page takes full height */
+body, html {
+  height: 100%;
+  margin: 0;
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4f4; */
+}
+
+/* Center the login & register containers */
+.login-container, .register-container {
+  max-width: 400px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  background: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Style input fields */
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Style button */
+button {
+  width: 100%;
+  padding: 10px;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+/* Style paragraph */
+p {
+  margin-top: 10px;
+}
+
+
+
+
+
+/* Option Page css */
+
+.HrRegi{
+  height: 100px;
+  width: 100px;
+  background-color: green;
+}
